@@ -108,43 +108,19 @@
     <section class="has-background-white section">
         <div class="columns is-centered">
             <div class="column is-three-fifths">
-                <h1 class="title is-size-3">
-                    Find dit sted i solen
-                </h1>
-                    <div class="is-size-4 has-text-justified">
-                    <p>Kender du det - sommeren nærmer sig. Og hvor skal jeg gå hen for at få sol på min blegfede krop? Måske er den i fuld gang. Eller også er den på hæld. 
-                        Under alle omstændigheder kunne det være smart at vide hvor du skal søge hen 
-                    </p><br>
-                    <p>Ved at bruge den her app får du en hurtig indsigt i hvor du kan søge hen for at 
-                        få mest mulig nytte ud af solen
-                    </p>
-                    <p>Om du skal sole dig eller ...
-
-                    </p>
-                    <p>Ikke nok med det så kan du også få noget at vide om hvilket tidsrum på dagen der er bedst
-
-                    </p>
-                    <p>
-                        <ul>
-                            <li>
-                                Brug det til 
-                            </li>
-                            <li>
-                                Brug det til
-                            </li>
-                            <li>
-                                Brug det til 
-                            </li>
-                        </ul>
-                        
-                    </p>
-                    <p>
-
-                    </p>
-                    
-                    </div>
+                    <p class="title has-text-justified">Hvad er det her?</p>
+                    <p class="is-size-5">Danmark er et dejligt sted. To måneder om året. Det er bare om at udnytte når solen endelig er her så jeg har udviklet den her app for at hjælpe mig (og måske dig?) med at finde ud af hvor få mest mulig sol på min blegfede krop.</p>
+                    <br>
+                    <p class="title">Hvordan er den lavet?</p>
+                    <p class="is-size-5">Jeg sætter scenen. Barsel hen over foråret, sommeren og sensommeren - og et enormt behov for at lave noget intellektuelt stimulerende. Hvad der startede som en simpel idé endte med at være en relativt hård omgang Det viste sig virkelig at trække tænder ud</p>
+                    <p class=""></p>
+                    <ol type="a">
+                        <li><b>Solberegninger: </b>først og fremmest en kæmpe tak til GRASS GIS og de champs der har lavet r.sun. Det er hovedmotoren i det underlæggende data. Det trak ret mange tænder ud at få et automaiseret processeringsmiljø op at køre så på den måde var det ikke mega nice, men alt i alt var det et mirakel det kunne gøres.</li>
+                        <li><b>Databearbejdning: </b>den fællesoffentligt tilgængelige højdemodel bliver brugt som input til selve analysen. Det bliver til relativt meget data, 500gb alt i alt fordelt på flere tusinde processerede billeder - ét billede per time fra maj til september = rigtig meget data.</li>
+                        <li><b>Infrastruktur: </b> DigitalOcean har som sædvanlig taget en del af det tunge slæb her og er den cloud platform jeg føler mig mest hjemme i. Det er relativt nemt at deploye nye VPS og deres Spaces (en modificeret S3) spiller også rigtig udmærket.</li>
+                    </ol>
             </div>
-        </div>  
+        </div>
     </section>
     <section>
         Endnu en side af hvor.io 

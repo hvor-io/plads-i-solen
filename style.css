@@ -25,6 +25,10 @@ body {
   height: 100%;
 }
 
+li {
+  margin: 40px;
+}
+
 .logo-text {
   font-family: helloketta;
   font-size: 2rem;
