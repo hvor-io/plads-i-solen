@@ -1,14 +1,12 @@
 :root {
   --primary--01: #FFFBEE;
-  --primary: #FFE5BA;
-  --primary-01:#FECE85;
+  --primary: #3C3C3C;
+  --primary-01:#f5f5f5;
   --primary-02:#E7BB79;
   --primary-03: #d2aa6e;
 
 }
 @font-face { font-family: helloketta; src: url('assets/HelloKetta-d99oX.ttf'); } 
-
-@font-face { font-family: beach-paradise; src: url('assets/BeachParadise-mLrwj.otf'); } 
 
 #map {
   height: 100vh;
@@ -18,11 +16,14 @@
 }
 
 html {
-    font-family: Barlow !important;
+    font-family: 'Roboto Flex', sans-serif !important;
+    color: var(--primary--01) !important;
 }
 
 body {
   height: 100%;
+  font-family: 'Roboto Flex', sans-serif !important;
+  font-weight: 300;
 }
 
 li {
@@ -31,8 +32,20 @@ li {
 
 .logo-text {
   font-family: helloketta;
-  font-size: 2rem;
+  font-size: 3.5rem;
+  color: var(--primary-01);
+  line-height: 1;
 }
+
+.navbar-item {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.title {
+  color: var(--primary--01)
+}
+
 
 .sunny{
   font-family: beach-paradise;
@@ -40,10 +53,187 @@ li {
   font-size: 4rem;
 }
 
-.header {
-position: relative;
-  text-align: center;
+.car-icon {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  color: var(--primary-02);
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  text-align: left;
   min-height: 100vh;
+  background-color: #3C3C3C;
+  display: flex;
+  align-items: center;
+  padding-top: 6rem;
+}
+
+.main-title {
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.subtitle {
+  font-weight: 700;
+  color: rgba(255, 251, 238, 0.85) !important;
+  line-height: 1.6;
+}
+
+.hero-image {
+  position: relative;
+}
+
+.map-placeholder {
+  background: linear-gradient(135deg, #2d2d2d 0%, #3C3C3C 100%);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.route-illustration {
+  width: 100%;
+  height: auto;
+}
+
+.cta-button {
+  font-size: 1.1rem;
+  padding: 1.5rem 3rem;
+  border-radius: 0;
+  transition: transform 0.2s ease;
+  background-color: var(--primary);
+  color: var(--primary--01);
+  border: 3px solid var(--primary--01);
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  background-color: #4a4a4a;
+}
+
+/* Features Section */
+.features-section {
+  background-color: var(--primary-01);
+  padding: 5rem 1.5rem;
+}
+
+.features-section .title {
+  color: var(--primary);
+}
+
+.feature-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  height: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card .title {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.feature-card p {
+  color: #666;
+}
+
+/* Use Cases Section */
+.use-cases-section {
+  background-color: #3C3C3C;
+  padding: 5rem 1.5rem;
+}
+
+.use-case-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.use-case-list li {
+  margin: 1.5rem 0;
+  padding-left: 0;
+  color: var(--primary--01);
+}
+
+.example-box {
+  background: #2d2d2d;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid var(--primary-02);
+}
+
+.example-box .title {
+  color: var(--primary--01);
+}
+
+.route-example {
+  background: #3C3C3C;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.route-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.route-point {
+  background: var(--primary--01);
+  color: var(--primary);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.route-stop {
+  background: var(--primary-02);
+  color: var(--primary);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.route-connector {
+  color: var(--primary-02);
+  font-size: 1.5rem;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, var(--primary-02) 0%, var(--primary-03) 100%);
+  padding: 5rem 1.5rem;
+}
+
+.cta-section .title,
+.cta-section .subtitle {
+  color: var(--primary);
+}
+
+/* Footer */
+.footer {
+  background-color: #2d2d2d;
+  padding: 2rem 1.5rem;
 }
 
 .navbar {
@@ -57,19 +247,6 @@ position: relative;
   box-shadow: 0 1px 4px rgba(15, 15, 16, 0.075);
 }
 
-.header::before{
-  background-color: var(--primary);
-  bottom: 0;
-  clip-path: ellipse(100% 100% at center top);
-  content: "";
-  height: 100%;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: -10%;
-  width: 100%;
-  z-index: -1;
-}
 
 #logo {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
